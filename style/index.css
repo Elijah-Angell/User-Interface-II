@@ -50,6 +50,7 @@ table {
     padding: 0;
     margin: 0;
     max-width:100%;
+	
     
 }
 
@@ -96,13 +97,15 @@ a{
 .Site{
 	margin:0 19rem;
 }
-#bottom{
-	justify-content: space-evenly;
-}
+
 .row{
 	display: flex;
-	width:40rem;
+	flex-wrap: wrap;
+	width:100%;
+	flex-direction:row ;
+	justify-content:space-evenly;
 }
+.row img
 .space{
 	margin-left: 8rem;
 	text-indent: 7rem;
@@ -115,4 +118,50 @@ a:hover{
 	border: solid #4F4f4F;
 	background-color: #4F4F4f;
 	transition-duration:2s;
+}
+
+@media(max-width:800px){
+	a{
+		display:flex;
+		flex-direction: column;
+		margin:0 9rem 1rem 9rem
+	}
+	.small{
+		margin: 0 18rem
+	}
+	.Site{
+		font-size:1.1rem;
+	}
+	.bottom{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.row img{
+		width:300px;
+	}
+	
+	
+
+@media(max-width:500px){
+	.navi nav{
+	display: flex;
+	justify-content: center;
+}
+
+	.Site{
+		width: 30%;
+	
+		
+	}
+	.bottom{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.row img{
+		width:190px;
+		
 }
